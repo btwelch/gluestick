@@ -16,7 +16,7 @@ module Gluestick
         :customer_email => @customer_email,
         :customer_first_name => @customer_first_name,
         :customer_last_name => @customer_last_name,
-        :customer_phone => @customer_phone
+        :customer_phone => @customer_phone,
         :customer_website => @customer_website
       }.reject {|k,v| v.nil?}
 
