@@ -1,6 +1,26 @@
 = gluestick
 
-Description goes here.
+== Usage
+
+Create a new client with your Gluestick api_key.
+
+require 'gluestick'
+
+# As a hash
+client = Gluestick::Client.new(api_key: 'GLUESTICK_API_KEY')
+
+Create a new OnboardingCustomer object and start the onboarding process:
+
+customer = SendGrid::OnboardingCustomer.new do |c|
+  c.customer_email = 'test@gluestick.io'
+  c.customer_first_name = 'Jeff'
+  c.customer_last_name = 'Jefferson'
+  c.customer_phone = '785-555-1212'
+end
+
+puts client.start_onboarding(customer) 
+
+
 
 == Contributing to gluestick
  
@@ -16,4 +36,5 @@ Description goes here.
 
 Copyright (c) 2014 Barry Welch. See LICENSE.txt for
 further details.
+
 

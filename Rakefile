@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "gluestick"
   gem.homepage = "http://github.com/btwelch/gluestick"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Client library for easy integrate with Gluestick. http://gluestick.io/api}
+  gem.description = %Q{Gluestick is a service for bootstrapped founders to do easily do personalized messaging for new customers while not sacrificing the free=time that their lifestyle affords them.}
   gem.email = "btwelchy@gmail.com"
   gem.authors = ["Barry Welch"]
   # dependencies defined in Gemfile
