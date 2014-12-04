@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "gluestick-0.1.0.gem",
     "gluestick.gemspec",
     "lib/gluestick.rb",
     "lib/gluestick/exceptions.rb",
