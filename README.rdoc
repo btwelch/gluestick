@@ -6,12 +6,11 @@ Create a new client with your Gluestick api_key.
 
 require 'gluestick'
 
-# As a hash
 client = Gluestick::Client.new(api_key: 'GLUESTICK_API_KEY')
 
 Create a new OnboardingCustomer object and start the onboarding process:
 
-customer = SendGrid::OnboardingCustomer.new do |c|
+customer = Gluestick::OnboardingCustomer.new do |c|
   c.customer_email = 'test@gluestick.io'
   c.customer_first_name = 'Jeff'
   c.customer_last_name = 'Jefferson'

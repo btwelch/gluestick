@@ -1,7 +1,6 @@
 require_relative 'gluestick/exceptions'
 require_relative 'gluestick/onboarding'
 
-#require 'json'
 require 'rest-client'
 
 module Gluestick
@@ -19,7 +18,7 @@ module Gluestick
       raise Gluestick::Exception.new('api_key is required') unless @api_key
     end
 
-    def send(mail)
+    def start_onboarding(mail)
       payload = mail.to_h.merge({api_key: @api_key})
       @conn[@endpoint].post(payload, {user_agent: @user_agent}) do |response, request, result|
         case response.code.to_s
