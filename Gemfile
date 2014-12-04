@@ -3,6 +3,10 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
+gem "rest-client", ">=1.7.2"
+gem "mime-types", '>= 1.16'
+gem "netrc", '~> 0.7'
+
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
@@ -12,3 +16,4 @@ group :development do
   gem "jeweler", "~> 2.0.1"
   gem "simplecov", ">= 0"
 end
+

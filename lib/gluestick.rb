@@ -1,11 +1,13 @@
 require_relative 'gluestick/exceptions'
 require_relative 'gluestick/onboarding'
 
+#require 'json'
 require 'rest-client'
 
 module Gluestick
   class Client
     attr_accessor :api_key, :host, :endpoint
+
 
     def initialize(params = {})
       @api_key    = params.fetch(:api_key, nil)
@@ -38,5 +40,6 @@ module Gluestick
     def create_conn
       @conn = RestClient::Resource.new(@host)
     end
+
   end
 end
