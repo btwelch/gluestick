@@ -8,8 +8,6 @@ module Gluestick
       params.each do |k, v|
         instance_variable_set("@#{k}", v) unless v.nil?
       end
-      @headers     ||= {}
-      @smtpapi     ||= Smtpapi::Header.new
       yield self if block_given?
     end
 
