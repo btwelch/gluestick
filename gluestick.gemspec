@@ -62,6 +62,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<simplecov>, [">= 0"])
   end
 
-  s.add_dependency 'rest-client'
+  s.add_dependency('rest-client')
 end
 
