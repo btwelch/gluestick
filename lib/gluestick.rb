@@ -12,7 +12,7 @@ module Gluestick
       @host       = params.fetch(:host, 'https://gluestix.herokuapp.com')
       @endpoint   = params.fetch(:endpoint, '/api/start_onboarding_for_customer')
       @conn       = params.fetch(:conn, create_conn)
-      @user_agent = params.fetch(:user_agent, 'gluestick/' + version() + ';ruby')
+      @user_agent = params.fetch(:user_agent, 'gluestick/0.1.0;ruby')
       yield self if block_given?
       raise Gluestick::Exception.new('api_key is required') unless @api_key
     end
@@ -36,10 +36,6 @@ module Gluestick
 
     def create_conn
       @conn = RestClient::Resource.new(@host)
-    end
-
-    def version
-      File.read("../VERSION")
     end
   end
 end
