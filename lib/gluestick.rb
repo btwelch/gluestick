@@ -34,6 +34,7 @@ module Gluestick
 
     private
 
+
     def create_conn
       @conn = RestClient::Resource.new(@host)
     end
