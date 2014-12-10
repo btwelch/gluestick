@@ -12,8 +12,7 @@ Create a new OnboardingCustomer object and start the onboarding process:
 
 customer = Gluestick::OnboardingCustomer.new do |c|
   c.customer_email = 'test@gluestick.io'
-  c.customer_first_name = 'Jeff'
-  c.customer_last_name = 'Jefferson'
+  c.customer_name = 'Jeff Jefferson'
   c.customer_phone = '785-555-1212'
   c.customer_website = 'http://www.cnn.com'
 end

@@ -2,7 +2,7 @@ require 'json'
 
 module Gluestick
   class OnboardingCustomer
-    attr_accessor :customer_email, :customer_first_name, :customer_last_name, :customer_phone, :customer_website
+    attr_accessor :customer_email, :customer_name, :customer_phone, :customer_website
 
     def initialize(params = {})
       params.each do |k, v|
@@ -14,8 +14,7 @@ module Gluestick
     def to_h
       payload = {
         :customer_email => @customer_email,
-        :customer_first_name => @customer_first_name,
-        :customer_last_name => @customer_last_name,
+        :customer_name => @customer_name,
         :customer_phone => @customer_phone,
         :customer_website => @customer_website
       }.reject {|k,v| v.nil?}
